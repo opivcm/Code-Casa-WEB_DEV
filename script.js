@@ -130,7 +130,7 @@ let categories = [
       category: "Finance",
       completed: false,
     },
-    // Additional tasks for each category
+    
     {
       id: 17,
       task: "Buy new clothes",
@@ -185,10 +185,9 @@ let categories = [
       category: "Finance",
       completed: false,
     },
-    // Add more tasks for each category as desired
   ];
   
-  // Define functions
+  
   const saveLocal = () => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   };
@@ -371,7 +370,7 @@ let categories = [
     }
   };
   
-  // Initialize variables and DOM elements
+  
   let selectedCategory = categories[0];
   const categoriesContainer = document.querySelector(".categories");
   const screenWrapper = document.querySelector(".wrapper");
@@ -390,7 +389,7 @@ let categories = [
   const cancelBtn = document.querySelector(".cancel-btn");
   const totalTasks = document.getElementById("total-tasks");
   
-  // Attach event listeners
+  
   menuBtn.addEventListener("click", toggleScreen);
   backBtn.addEventListener("click", toggleScreen);
   addTaskBtn.addEventListener("click", toggleAddTaskForm);
@@ -398,7 +397,7 @@ let categories = [
   addBtn.addEventListener("click", addTask);
   cancelBtn.addEventListener("click", toggleAddTaskForm);
   
-  // Render initial state
+  
   getLocal();
   renderTasks();
   categories.forEach((category) => {
